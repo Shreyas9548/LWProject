@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Restaurant Menu</title>
+<link rel="stylesheet" href="styles.css">
+<script src="https://sdk.amazonaws.com/js/aws-sdk-2.1031.0.min.js"></script>
+</head>
+<body>
+  <div class="grid-container">
+    <div class="grid-heading">
+      <h1>Restaurant Menu</h1>
+      <p>Welcome to our delicious menu.</p>
+    </div>
+    <div class="grid-item appetizers" >
+      <h2 class="menu-item">Appetizers</h2>
+      <div class="item">
+        <input type="checkbox" class="item-checkbox" data-price="4.99">
+        <p class="item-description">Deviled egg</p>
+        <p class="item-price">$ 4.99</p>
+      </div>
+      <div class="item">
+        <input type="checkbox" class="item-checkbox" data-price="7.99">
+        <p class="item-description">Bruschetta</p>
+        <p class="item-price">$ 7.99</p>
+      </div>
+      <div class="item">
+        <input type="checkbox" class="item-checkbox" data-price="6.99">
+        <p class="item-description">Stuffed Mushrooms</p>
+        <p class="item-price">$ 6.99</p>
+      </div>
+      <div class="item">
+        <input type="checkbox" class="item-checkbox" data-price="5.99">
+        <p class="item-description">Caprese Skewers</p>
+        <p class="item-price">$ 5.99</p>
+      </div>
+    </div>
+    <div class="grid-item MC">
+      <h2 class="menu-item">Main Courses</h2>
+      <div class="item">
+        <input type="checkbox" class="item-checkbox" data-price="12.99">
+        <p class="item-description">Frito Pie</p>
+        <p class="item-price">$12.99</p>
+      </div>
+      <div class="item">
+        <input type="checkbox" class="item-checkbox" data-price="15.99">
+        <p class="item-description">BBQ Ribs</p>
+        <p class="item-price">$15.99</p>
+      </div>
+      <div class="item">
+        <input type="checkbox" class="item-checkbox" data-price="10.99">
+        <p class="item-description">Baked Italian Sub</p>
+        <p class="item-price">$10.99</p>
+      </div>
+      <div class="item">
+        <input type="checkbox" class="item-checkbox" data-price="13.99">
+        <p class="item-description">Cheesy Zucchini Rice</p>
+        <p class="item-price">$13.99</p>
+      </div>
+    </div>
+    <div class="grid-item Desserts">
+      <h2 class="menu-item">Desserts</h2>
+      <div class="item">
+        <input type="checkbox" class="item-checkbox" data-price="7.49">
+        <p class="item-description">Tiramisu</p>
+        <p class="item-price">$7.49</p>
+      </div>
+      <div class="item">
+        <input type="checkbox" class="item-checkbox" data-price="5.49">
+        <p class="item-description">Chocolate Mousse Cake</p>
+        <p class="item-price">$5.49</p>
+      </div>
+      <div class="item">
+        <input type="checkbox" class="item-checkbox" data-price="9.19">
+        <p class="item-description">Roasted Strawberry Crumble</p>
+        <p class="item-price">$9.19</p>
+      </div>
+      <div class="item">
+        <input type="checkbox" class="item-checkbox" data-price="4.49">
+        <p class="item-description">Choc a block 1</p>
+        <p class="item-price">$4.49</p>
+      </div>
+    </div>
+    <div class="grid-item Beverages">
+      <h2 class="menu-item">Beverages</h2>
+      <div class="item">
+        <input type="checkbox" class="item-checkbox" data-price="2.99">
+        <p class="item-description">Fliter Coffee</p>
+        <p class="item-price">$2.99</p>
+      </div>
+      <div class="item">
+        <input type="checkbox" class="item-checkbox" data-price="1.99">
+        <p class="item-description">Fruit Punch</p>
+        <p class="item-price">$1.99</p>
+      </div>
+      <div class="item">
+        <input type="checkbox" class="item-checkbox" data-price="3.99">
+        <p class="item-description">Mixed Fruit Lassi</p>
+        <p class="item-price">$3.99</p>
+      </div>
+      <div class="item">
+        <input type="checkbox" class="item-checkbox" data-price="5.99">
+        <p class="item-description">The Bardot</p>
+        <p class="item-price">$5.99</p>
+      </div>
+    </div>
+    <div class="order-section">
+      <button class="order-button">Place Order</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

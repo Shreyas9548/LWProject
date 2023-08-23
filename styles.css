@@ -1,0 +1,153 @@
+/* Reset styles */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+
+/* Grid container */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto 1fr 1fr auto;
+  height: 100vh;
+}
+
+/* Grid heading */
+.grid-heading {
+  grid-column: span 2;
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(26, 196, 196);
+}
+
+/* Grid item styling */
+.grid-item {
+  padding: 20px;
+  text-align: center;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Appetizers section with blurred background */
+.grid-item.appetizers {
+  position: relative;
+}
+
+.grid-item.appetizers::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('appetizers.jpg'); /* Replace with your image path */
+  background-position: center;
+  background-size: cover;
+  filter: blur(6px); /* Apply the blur effect */
+  z-index: -1;
+}
+
+.grid-item.MC {
+  position: relative;
+}
+
+.grid-item.MC::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('main-course.jpeg'); /* Replace with your image path */
+  background-position: center;
+  background-size: cover;
+  filter: blur(6px); /* Apply the blur effect */
+  z-index: -1;
+}
+
+.grid-item.Desserts {
+  position: relative;
+}
+
+.grid-item.Desserts::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('dessert.jpeg'); /* Replace with your image path */
+  background-position: center;
+  background-size: cover;
+  filter: blur(6px); /* Apply the blur effect */
+  z-index: -1;
+}
+
+.grid-item.Beverages {
+  position: relative;
+}
+
+.grid-item.Beverages::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('beverage.jpeg'); /* Replace with your image path */
+  background-position: center;
+  background-size: cover;
+  filter: blur(6px); /* Apply the blur effect */
+  z-index: -1;
+}
+
+
+/* Menu item styles */
+.menu-item {
+  font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+
+/* Other styles... */
+.item-description {
+  font-size: 1 rem;
+  margin-right: 30px;
+}
+
+/* Order button styles */
+.order-button {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+}
+
+/* Order section styles */
+.order-section {
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Item styles */
+.item {
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+}
+
+/* Item checkbox styles */
+.item-checkbox {
+  margin-right: 10px;
+}
